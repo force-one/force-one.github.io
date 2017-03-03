@@ -274,8 +274,8 @@ section.body{
   height: 250px;
   overflow: hidden;
   box-sizing: border-box;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+  -webkit-animation-delay: 1.3s;
+  animation-delay: 1.3s;
 }
 .overlay > a > img{
   position: relative;
@@ -300,7 +300,6 @@ section.body{
   color: white;
   padding: 10px;
   background: rgb(87, 87, 87);
-  /*box-shadow: 0 -2px 4px rgba(41, 41, 41, 0.68);*/
   -webkit-transform: translateY(10px);
   -ms-transform: translateY(10px);
   transform: translateY(10px);
