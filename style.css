@@ -37,6 +37,10 @@ hr{
   border-radius: 5px;
 }
 
+.desc{
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
 header img{
   position: fixed;
   top: -10px;
@@ -80,6 +84,33 @@ header img:nth-child(5){
   background-size: cover;
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
+}
+@-webkit-keyframes animasi-bg {
+  0% {opacity:1;}
+  17% {
+    opacity:1;
+
+  }
+  25% {
+   -webkit-transform: translateX(-80px);
+   -moz-transform: translateX(-80px);
+   -o-transform:  translateX(-80px);
+   transform: translateX(-80px);
+    opacity:0;
+  }
+  27%{
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform:  translateX(0);
+    transform: translateX(0);
+     opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
 }
 @keyframes animasi-bg {
   0% {opacity:1;}
@@ -134,6 +165,26 @@ header img:nth-child(5){
 .desc h3 span:nth-child(5){
   -webkit-animation-delay: 3s;
   animation-delay: 3s;
+}
+@-webkit-keyframes desk{
+  2%{
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  25%{
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  27%{
+    opacity: 0;
+    -webkit-transform: translateY(25px);
+    -ms-transform: translateY(25px);
+    transform: translateY(25px);
+  }
 }
 @keyframes desk{
   2%{
@@ -223,6 +274,8 @@ section.body{
   height: 250px;
   overflow: hidden;
   box-sizing: border-box;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
 }
 .overlay > a > img{
   position: relative;
@@ -262,9 +315,8 @@ section.body{
 
 a, a:hover,
 a > h5, a > h5:hover{
-  text-decoration: none;
-  color: inherit;
-  color: white;
+  color: white !important;
+  text-decoration: none !important;
 }
 
 footer{
@@ -286,11 +338,17 @@ footer .buton{
   right: 5%;
   cursor: pointer;
 }
-section .row p{
+section > .row > p{
   display: block;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
   width: 70%;
   line-height: 30px;
   font-size: 18px;
   font-weight: lighter;
   margin-bottom: 25px;
+}
+section > .row > h3{
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
 }
