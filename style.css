@@ -367,11 +367,11 @@ section > .row > p{
     line-height: 20px;
   }
   .desc h3 span{
-    top: 37%;
+    top: 38%;
   }
   section.body .overlay{
     max-width: 100%;
-    max-height: 60%;
+    max-height: 50%;
   }
   footer p{
     max-width: 80%;
