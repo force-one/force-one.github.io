@@ -133,7 +133,7 @@ header img:nth-child(5){
   }
 }
 
-.desc h3:last-child span{
+.desc h3 span{
   position: absolute;
   line-height: 30px;
   margin-left: 6px;
@@ -143,19 +143,19 @@ header img:nth-child(5){
   animation: desk 12s infinite;
   opacity: 0;
 }
-.desc h3:last-child span:nth-child(1){
+.desc h3 span:nth-child(2){
   -webkit-animation-delay: 9s;
   animation-delay: 9s;
 }
-.desc h3:last-child span:nth-child(2){
+.desc h3 span:nth-child(3){
   -webkit-animation-delay: 6s;
   animation-delay: 6s;
 }
-.desc h3:last-child span:nth-child(3){
+.desc h3 span:nth-child(4){
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
 }
-.desc h3:last-child span:nth-child(4){
+.desc h3 span:nth-child(5){
   -webkit-animation-delay: 3s;
   animation-delay: 3s;
 }
@@ -345,33 +345,33 @@ section > .row > p{
   }
   header{max-width: 100%;}
   .judul{
-    max-width: 100%;
+    max-width: 90%;
     text-align: center;
     margin-left: 2px;
   }
   .judul h1{
-    font-size: 38px;
+    font-size: 40px;
     margin-bottom: 20px;
   }
   header > .container > .row > .col-md-6 > .judul > hr{
     display: none;
   }
   .judul h4{
-    font-size: 15px;
+    font-size: 18px;
   }
   .desc h3{
     width: 90%;
     text-align: center;
     top:73%;
     font-size: 8px;
-    /*line-height: 20px;*/
+    line-height: 20px;
   }
-  .desc h3:last-child{
-    top:75%;
+  .desc h3 span{
+    top: 35%;
   }
   section.body .overlay{
     max-width: 100%;
-    max-height: 65%;
+    max-height: 80%;
   }
   footer p{
     max-width: 80%;
