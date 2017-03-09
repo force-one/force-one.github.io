@@ -245,6 +245,8 @@ header{
   color: #eaeaea;
   text-shadow: 0 2px 1px rgba(0, 0, 0, 0.48);
   position: relative;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }
 .desc h3{
   font-size: 18px;
@@ -338,8 +340,13 @@ section > .row > p{
 }
 /*480PX*/
 @media screen and (max-width:480px) {
-  html,body{
+  /*html,body{
     max-height: 100%;
+  }*/
+  header#home > img{
+    left: -60%;
+    height: 100vh;
+    width: auto;
   }
   #top-bar{
     padding-left: 5px;
@@ -384,6 +391,12 @@ section > .row > p{
   }
   footer .buton{
     bottom: 55px;
+  }
+  .overlay .capt{
+    -webkit-transform: translateY(-58px);
+    -ms-transform: translateY(-58px);
+    transform: translateY(-58px);
+    opacity: 1;
   }
 }
 @media screen and (max-width:320px) {
