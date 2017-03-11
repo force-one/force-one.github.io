@@ -340,9 +340,6 @@ section > .row > p{
 }
 /*480PX*/
 @media screen and (max-width:480px) {
-  /*html,body{
-    max-height: 100%;
-  }*/
   header#home > img{
     left: -60%;
     height: 100vh;
@@ -352,12 +349,15 @@ section > .row > p{
     padding-left: 5px;
     padding-right: 5px;
   }
-  #brand{display: none;}
-  [class*="col-"]{
-    max-width: 100%;
-  }
+
   header{
     max-height: 100%;
+  }
+  .scroller{
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 250px;
+    white-space: nowrap;
   }
   .judul{
     margin-left: -4.5%;
@@ -381,22 +381,34 @@ section > .row > p{
   .judul h4{
     font-size: 15px;
   }
+  section.body .col-md-2{
+    max-width: 40%;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+  }
   section.body .overlay{
-    max-width: 100%;
+    position: relative;
+    text-align: center;
+    max-width: 90%;
+    padding: 0;
+  }
+  section.body .overlay img{
+    width: 100%;
+    height: auto;
   }
   footer p{
-    max-width: 80%;
-    padding-left: 15px;
+    display: block;
+    margin: 0 auto;
+    padding: 0 10px;
     line-height: 25px;
   }
   footer .buton{
-    bottom: 55px;
+    display: none;
   }
   .overlay .capt{
-    -webkit-transform: translateY(-58px);
-    -ms-transform: translateY(-58px);
-    transform: translateY(-58px);
-    opacity: 1;
+    display: none;
   }
 }
 @media screen and (max-width:320px) {
@@ -433,11 +445,7 @@ section > .row > p{
     padding: 0;
     margin-top: 20px;
   }
-  section.body > .row > .col-xs-6 > .overlay > a > h5{
-    font-size:10px;
-  }
-  footer .buton{
-    height: 40px;
-    width: 40px;
+  .scroller{
+    height: 150px;
   }
 }
