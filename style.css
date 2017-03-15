@@ -261,12 +261,9 @@ section.body{
   background: white url('topography.png') repeat;
 }
 .overlay{
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0 auto;
   padding: 20px;
   width: 200px;
-  height: 250px;
   overflow: hidden;
   box-sizing: border-box;
   -webkit-animation-delay: .3s;
@@ -338,25 +335,25 @@ section > .row > p{
   font-weight: lighter;
   margin-bottom: 25px;
 }
+
 /*480PX*/
-@media screen and (max-width:480px) {
+@media screen and (max-width:766px) {
   header#home > img{
     left: -60%;
     height: 100vh;
     width: auto;
   }
   #top-bar{
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   header{
-    max-height: 100%;
+    max-height: 100vh;
   }
   .scroller{
     overflow-x: auto;
     overflow-y: hidden;
-    height: 250px;
     white-space: nowrap;
   }
   .judul{
@@ -385,7 +382,7 @@ section > .row > p{
     max-width: 40%;
     display: inline-block;
     overflow: hidden;
-    padding: 0;
+    padding: 5px 2px 5px;
     text-align: center;
   }
   section.body .overlay{
@@ -393,6 +390,10 @@ section > .row > p{
     text-align: center;
     max-width: 90%;
     padding: 0;
+  }
+  section.body .overlay h5{
+    display: none;
+    height: auto;
   }
   section.body .overlay img{
     width: 100%;
@@ -412,10 +413,11 @@ section > .row > p{
   }
 }
 @media screen and (max-width:320px) {
-  html,body{
-    height: 100%;
+  #top-bar{
+    padding-left: 10px;
+    padding-right: 10px;
   }
-  header{height: 100%;}
+  header{height: 100vh;}
   .judul{
     max-width: 100%;
     text-align: center;
@@ -444,8 +446,5 @@ section > .row > p{
     max-height: 150px;
     padding: 0;
     margin-top: 20px;
-  }
-  .scroller{
-    height: 150px;
   }
 }
